@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nails by Princess</title>
+  <meta name="description" content="Nails by Princess - Nail tech in Blackheath, Western Cape. Acrylics, gel, pedicures. Book your slot with a deposit." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top progress bar -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Nails by Princess home">
+        <span class="brand__logo"><img src="assets/logo-removebg-preview.png" alt="Nails by Princess logo"></span>
+        <span class="brand__text">
+          <strong>Nails by Princess</strong>
+          <small>Blackheath • Western Cape</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#hours">Hours</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book">Book</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">Welcome to <span class="mono">Nails_by Princess</span> ✨</p>
+          <h1>Let’s make your nails pop.</h1>
+          <p class="lead">
+            Acrylics, gel, and pedicures done with care — in Blackheath, Western Cape.
+            Book your slot and show up glowing.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#book">Book an appointment</a>
+            <a class="btn btn--ghost" href="#services">See prices</a>
+          </div>
+
+          <div class="hero__info">
+            <div class="infoCard">
+              <span class="infoCard__label">Deposit</span>
+              <span class="infoCard__value">R100 secures your slot</span>
+            </div>
+            <div class="infoCard">
+              <span class="infoCard__label">Policy</span>
+              <span class="infoCard__value">24hr cancellation applies</span>
+            </div>
+          </div>
+
+          <div class="hero__quick">
+            <button class="chip" id="copyPhone" data-copy="0671099815" type="button" title="Copy phone">
+              📲 067 109 9815 <span class="chip__hint">Copy</span>
+            </button>
+            <button class="chip" id="copyEmail" data-copy="Pirncesssophia@gmail.com" type="button" title="Copy email">
+              ✉️ Pirncesssophia@gmail.com <span class="chip__hint">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <!-- Put the image file in the same folder as index.html -->
+          <img
+            src="assets/princess nails.jpeg"
+            alt="Nails by Princess - services and pricing"
+            class="hero__img"
+            loading="lazy"
+          />
+          <div class="badge">
+            <strong>📍 35 Bobby Street</strong>
+            <span>Blackheath, Western Cape</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services & Prices</h2>
+          <p>Transparent pricing. If you want art or a custom look, mention it when booking.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <header class="card__head">
+              <h3>Pedicure</h3>
+              <p class="muted">Fresh feet, clean finish.</p>
+            </header>
+            <ul class="priceList">
+              <li><span>Express pedicure</span><strong>R250</strong></li>
+              <li><span>Deluxe pedicure</span><strong>R350</strong></li>
+              <li><span>Buff and shine</span><strong>R100</strong></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <header class="card__head">
+              <h3>Acrylic</h3>
+              <p class="muted">Classic sets, shaped to perfection.</p>
+            </header>
+            <ul class="priceList">
+              <li><span>Short acrylic</span><strong>R250</strong></li>
+              <li><span>Medium acrylic</span><strong>R350</strong></li>
+              <li><span>Long acrylic</span><strong>R400</strong></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <header class="card__head">
+              <h3>Gel</h3>
+              <p class="muted">Glossy + durable.</p>
+            </header>
+            <ul class="priceList">
+              <li><span>Gel on hands</span><strong>R150</strong></li>
+              <li><span>Gel on toes</span><strong>R150</strong></li>
+              <li><span>Gel tips with art</span><strong>R280</strong></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid grid--2 mt">
+          <article class="card card--soft">
+            <header class="card__head">
+              <h3>Soak Off</h3>
+              <p class="muted">Removal services.</p>
+            </header>
+            <ul class="priceList">
+              <li><span>Acrylic soak off</span><strong>R80</strong></li>
+              <li><span>Gel soak off</span><strong>R50</strong></li>
+            </ul>
+          </article>
+
+          <article class="card card--accent">
+            <header class="card__head">
+              <h3>Booking Notes</h3>
+              <p class="muted">Please read before booking.</p>
+            </header>
+            <ul class="bullets">
+              <li><strong>R100 deposit</strong> secures your slot</li>
+              <li><strong>24hr cancellation</strong> policy applies</li>
+              <li>Arrive on time to keep things smooth ✨</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opening hours -->
+    <section class="section section--alt" id="hours">
+      <div class="container">
+        <div class="section__head">
+          <h2>Opening Hours</h2>
+          <p>Plan your visit — today is highlighted automatically.</p>
+        </div>
+
+        <div class="hoursWrap">
+          <table class="hours" aria-label="Opening hours table">
+            <tbody>
+              <tr data-day="1"><th>Monday</th><td>8am – 5pm</td></tr>
+              <tr data-day="2"><th>Tuesday</th><td>8am – 5pm</td></tr>
+              <tr data-day="3"><th>Wednesday</th><td>8am – 5pm</td></tr>
+              <tr data-day="4"><th>Thursday</th><td>8am – 5pm</td></tr>
+              <tr data-day="5"><th>Friday</th><td>8am – 5pm</td></tr>
+              <tr data-day="6"><th>Saturday</th><td>8am – (confirm)</td></tr>
+              <tr data-day="0"><th>Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+
+          <div class="note">
+            <h3>Same-day bookings?</h3>
+            <p>
+              Send a WhatsApp or call and we’ll confirm availability.
+            </p>
+            <div class="note__cta">
+              <a class="btn btn--primary" href="tel:+27671099815">Call now</a>
+              <a class="btn btn--ghost" target="_blank" rel="noopener"
+                 href="https://wa.me/27671099815?text=Hi%20Princess!%20I%20want%20to%20book%20a%20nail%20appointment.%20">
+                 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <h2>Gallery</h2>
+          <p>Tap any image to view larger.</p>
+        </div>
+         <!-- You can add more images later. Example:
+          <button class="gallery__item" data-img="set1.jpg" data-alt="Red gel nails" type="button">
+            <img src="set1.jpg" alt="Red gel nails" loading="lazy">
+          </button>
+          -->
+        <div class="gallery">
+          <button class="gallery__item" data-img=" assets/princess nails.jpeg" data-alt="Nails by Princess pricing poster" type="button">
+            <img src="assets/princess nails.jpeg" alt="Nails by Princess pricing poster" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/n1.jpeg" data-alt="Red gel nails" type="button">
+            <img src="assets/n1.jpeg" alt="Purple nails" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/n2.jpeg" data-alt="Pink gel nails" type="button">
+            <img src="assets/n2.jpeg" alt="Pink gel nails" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/n3.jpeg" data-alt="Blue gel nails" type="button">
+            <img src="assets/n3.jpeg" alt="Peach gel nails" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/n4.jpeg" data-alt="Red gel nails" type="button">
+            <img src="assets/n4.jpeg" alt="Red gel nails" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/t1.jpeg" data-alt="Purple gel nails" type="button">
+            <img src="assets/t1.jpeg" alt="Peach and white gel nails" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/t2.jpeg" data-alt="Purple gel nails" type="button">
+            <img src="assets/t2.jpeg" alt="Peach and pink nails" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/t3.jpeg" data-alt="Purple gel nails" type="button">
+            <img src="assets/t3.jpeg" alt="Peach and white nails" loading="lazy">
+          </button>
+          <button class="gallery__item" data-img="assets/t4.jpeg" data-alt="Purple gel nails" type="button">
+            <img src="assets/t4.jpeg" alt="Purple nails" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section section--alt" id="book">
+      <div class="container">
+        <div class="section__head">
+          <h2>Book an Appointment</h2>
+          <p>Fill in the form and we’ll confirm your slot.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <form class="form card" id="bookingForm" novalidate>
+            <div class="form__row">
+              <label>
+                Full name
+                <input type="text" name="name" placeholder="Your name" required minlength="2" />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" placeholder="e.g. 0671099815" required minlength="9" />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                Service
+                <select name="service" required>
+                  <option value="" selected disabled>Select a service…</option>
+                  <option>Express pedicure (R250)</option>
+                  <option>Deluxe pedicure (R350)</option>
+                  <option>Buff and shine (R100)</option>
+                  <option>Short acrylic (R250)</option>
+                  <option>Medium acrylic (R350)</option>
+                  <option>Long acrylic (R400)</option>
+                  <option>Gel on hands (R150)</option>
+                  <option>Gel on toes (R150)</option>
+                  <option>Gel tips with art (R280)</option>
+                  <option>Acrylic soak off (R80)</option>
+                  <option>Gel soak off (R50)</option>
+                  <option>Custom / Other</option>
+                </select>
+              </label>
+
+              <label>
+                Preferred date
+                <input type="date" name="date" required />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                Preferred time
+                <input type="time" name="time" required />
+              </label>
+              <label>
+                Notes (optional)
+                <input type="text" name="notes" placeholder="Color, shape, art, etc." />
+              </label>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" name="policy" required />
+              <span>
+                I understand the <strong>R100 deposit</strong> secures my slot and the
+                <strong>24hr cancellation</strong> policy applies.
+              </span>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Send booking request</button>
+              <button class="btn btn--ghost" type="reset">Clear</button>
+            </div>
+
+            <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="card card--soft">
+            <h3>What happens next?</h3>
+            <ol class="steps">
+              <li>You submit your request.</li>
+              <li>We confirm availability and deposit details.</li>
+              <li>Your appointment is locked in ✨</li>
+            </ol>
+
+            <div class="mini">
+              <h4>Quick Contact</h4>
+              <p><strong>Phone:</strong> <a href="tel:+27671099815">067 109 9815</a></p>
+              <p><strong>Email:</strong> <a href="mailto:Pirncesssophia@gmail.com">Pirncesssophia@gmail.com</a></p>
+              <p class="muted">Tip: use WhatsApp for faster replies.</p>
+
+              <a class="btn btn--primary w100" target="_blank" rel="noopener"
+                 href="https://wa.me/27671099815?text=Hi%20Princess!%20I%27d%20like%20to%20book%20a%20slot.%20Here%20are%20my%20details:%20">
+                Book via WhatsApp
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact & Location</h2>
+          <p>Visit us in Blackheath, Western Cape.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Details</h3>
+            <ul class="contactList">
+              <li>📍 <strong>Address:</strong> 35 Bobby Street, Blackheath, Western Cape, 7580, South Africa</li>
+              <li>📲 <strong>Phone:</strong> <a href="tel:+27671099815">067 109 9815</a></li>
+              <li>✉️ <strong>Email:</strong> <a href="mailto:Pirncesssophia@gmail.com">Pirncesssophia@gmail.com</a></li>
+            </ul>
+
+            <div class="contactBtns">
+              <a class="btn btn--primary" href="tel:+27671099815">Call</a>
+              <a class="btn btn--ghost" target="_blank" rel="noopener"
+                 href="https://wa.me/27671099815?text=Hi%20Princess!%20I%20have%20a%20question%20about%20your%20services.%20">
+                WhatsApp
+              </a>
+              <a class="btn btn--ghost" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=35%20Bobby%20Street%20Blackheath%20Western%20Cape%207580%20South%20Africa">
+                Open in Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="card map">
+            <iframe
+              title="Map to 35 Bobby Street, Blackheath"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=35%20Bobby%20Street%20Blackheath%20Western%20Cape%207580%20South%20Africa&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <strong>Nails by Princess</strong>
+          <p class="muted"><img style="width:202px; height:202px;" src="assets/logo-removebg-preview.png" alt="Nails by Princess logo"> Clean. Classy. Cute.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#services">Prices</a>
+          <a href="#book">Book</a>
+          <a href="#contact">Contact</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating action button -->
+    <div class="fabWrap" aria-label="Quick actions">
+      <a class="fab" href="tel:+27671099815" aria-label="Call Nails by Princess">📞</a>
+      <a class="fab fab--wa" target="_blank" rel="noopener"
+         href="https://wa.me/27671099815?text=Hi%20Princess!%20I%20want%20to%20book%20a%20slot.%20"
+         aria-label="WhatsApp Nails by Princess">💬</a>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close image">✕</button>
+      <img id="lightboxImg" alt="" />
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
