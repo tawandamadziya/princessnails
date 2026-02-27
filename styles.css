@@ -1,5 +1,5 @@
 :root{
-  --bg: #0b0b10;
+  --bg: #764374;
   --panel: rgba(255,255,255,.06);
   --panel2: rgba(255,255,255,.08);
   --text: rgba(255,255,255,.92);
@@ -51,7 +51,7 @@ img{ max-width:100%; display:block; }
   z-index: 1000;
   -webkit-backdrop-filter: blur(14px); /* Safari/iOS support */
   backdrop-filter: blur(14px);
-  background: rgba(11,11,16,.55);
+  background: rgba(207, 116, 219, 0.55);
   border-bottom: 1px solid var(--line);
 }
 .nav{
